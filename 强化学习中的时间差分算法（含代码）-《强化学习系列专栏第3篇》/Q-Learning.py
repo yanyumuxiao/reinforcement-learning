@@ -25,7 +25,7 @@ class Q_Learning(object):
         self.final_epsilon = 0.01
         self.alpha = 0.8
         self.gamma = 0.9
-        print("q_function为：{}".format(self.q_function))
+        print("q_function为：\n{}".format(self.q_function))
         print("============================================================")
 
 
@@ -95,11 +95,11 @@ class Q_Learning(object):
 
             if episode % 3000 == 0:
                 print("第{}个episode已经结束".format(episode))
-                print("当前的q_function是：{}".format(self.q_function))
+                print("当前的q_function是：\n{}".format(self.q_function))
 
 
     def show_policy(self):
-        print("当前的q_function是：{}".format(self.q_function))
+        print("当前的q_function是：\n{}".format(self.q_function))
         self.policy = {}
 
         print("策略是：")
